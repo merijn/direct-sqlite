@@ -336,7 +336,7 @@ newtype CError = CError CInt
 -- exception you can handle.
 --
 -- Therefore, do not use direct-sqlite with a different version of SQLite than
--- the one bundled (currently, 3.24.0).  If you do, ensure that 'decodeError'
+-- the one bundled (currently, 3.41.0).  If you do, ensure that 'decodeError'
 -- and 'decodeColumnType' are still exhaustive.
 decodeError :: CError -> Error
 decodeError (CError n) = case n of
